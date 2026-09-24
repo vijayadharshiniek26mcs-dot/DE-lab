@@ -1,0 +1,18 @@
+import pandas as pd
+df=pd.read_csv(r"D:\26MCS32\student_performance.csv")
+print("---dataset---")
+print(df)
+print("\n---dataset shape---")
+print("number of rows:",df.shape[0])
+print("number of columns:",df.shape[1])
+print("\n---feature names---")
+for feature in df.columns:
+    print(feature)
+print("\n--data types--")
+print(df.dtypes)
+print("\n---missing values---")
+print(df.isnull().sum())
+print("\n---dataframe information---")
+df.info()
+print("\n---summary statistics---")
+print(df.describe())
